@@ -5,8 +5,7 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Gallery from "./components/Gallery";
 import HowItWorks from "./components/HowItWorks";
-import Cities from "./components/Cities";
-import Pricing from "./components/Pricing";
+import Cities from "./components/Cities";import Pricing from "./components/Pricing.jsx";
 import Footer from "./components/Footer";
 import Reviews from "./components/Reviews";
 
