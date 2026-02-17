@@ -1,4 +1,4 @@
-import "./pricing.css";
+import "./Pricing.css";
 function Pricing() {
   return (
     <section id="pricing" className="pricing">
