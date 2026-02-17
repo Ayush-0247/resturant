@@ -175,7 +175,6 @@
 
 .about-extension {
   padding: 120px 60px;
-  background: #ffffff;
 }
 
 .extension-header {
@@ -201,16 +200,14 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
+  
 }
 
 .ext-card {
-  background: #f9fafb;
+  background: #dffeff;
   padding: 40px 30px;
   border-radius: 18px;
-  width: 320px;
+  width: 420px;
   text-align: center;
   transition: 0.35s ease;
   border: 1px solid #eee;
@@ -254,8 +251,7 @@
 
 
 .edge-section {
-  padding: 120px 60px;
-  background: #f8f9fa;
+  padding: 50px 60px;
 }
 
 .edge-header {
@@ -282,12 +278,12 @@
   gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1500px;
+  padding: 0;
 }
 
 .edge-card {
-  background: white;
+  background: #eafcff;
   padding: 40px 30px;
   border-radius: 20px;
   width: 320px;
