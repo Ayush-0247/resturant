@@ -1,0 +1,198 @@
+.footer {
+  background: #ffffff;
+  margin-top: 80px;
+}
+.newsletter-wrapper {
+  background: #cce0ff;
+  padding: 80px 0;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 300px;
+  border-bottom-left-radius: 50px;
+  position: relative;
+
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.9s ease;
+}
+
+.newsletter-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.newsletter-card {
+  max-width: 900px;
+  margin: auto;
+  background: linear-gradient(135deg, #181d32, #4a6cf7);
+  padding: 50px 40px;
+  border-radius: 18px;
+  text-align: center;
+  color: white;
+
+  animation: floatCard 10s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.newsletter-card h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: textFade 1s ease forwards;
+}
+
+.newsletter-card p {
+  font-size: 15px;
+  margin-bottom: 25px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: textFade 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes textFade {
+  to {
+    opacity: 0.95;
+    transform: translateY(0);
+  }
+}
+
+.newsletter-input {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.newsletter-input input {
+  padding: 14px 18px;
+  border-radius: 40px;
+  border: none;
+  width: 280px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.4s ease;
+}
+
+.newsletter-input input:focus {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transform: scale(1.03);
+}
+
+.newsletter-input button {
+  padding: 14px 28px;
+  border-radius: 40px;
+  border: none;
+  background: white;
+  color: #4a6cf7;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-input button:hover {
+  transform: scale(1.05);
+}
+
+.newsletter-input button::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: rgba(74, 108, 247, 0.15);
+  top: -50%;
+  left: -50%;
+  transform: rotate(45deg);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.newsletter-input button:hover::after {
+  opacity: 1;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 60px auto 20px;
+  
+  padding: 60px ;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+
+}
+
+.footer-brand h2 {
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.footer-links h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: #4a6cf7;
+  transform: translateX(4px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+
+
+
+
+
+
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  color: #6b7280;
+  transition: 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: #4a6cf7;
+  transform: translateY(-4px);
+}

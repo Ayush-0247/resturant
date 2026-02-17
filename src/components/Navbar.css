@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;   /* move bg here */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;   /* this controls height properly */
+}
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  position: relative;margin: 0px 175px;
+  color: #53ff53;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Accent color for Bite */
+.logo span {
+  color: #ff9f1c;
+}
+
+/* Leaf effect */
+.logo::before {
+  content: "🍃";
+  position: absolute;
+  left: -35px;
+  top: 2px;
+  font-size: 22px;
+}
+
+/* Smooth hover effect */
+.logo:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  
+  margin-right: 100px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff6b00;
+}
+
+
+.btn-nav {
+  background-color: #ff6b00;
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+  background-color: #e85d00;
+}

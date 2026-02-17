@@ -1,0 +1,134 @@
+/* ===== SECTION ===== */
+
+.how {
+  padding: 80px 10%;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.how h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 1000;
+
+}
+
+/* ===== CONTAINER ===== */
+
+.how-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== LEFT IMAGE ===== */
+
+.how-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.how-image img {
+  width: 430px;
+  max-width: 100%;
+  border-radius: 30px;
+  transition: transform 0.6s ease;    opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease;
+}
+
+.how-image img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.how.show .how-image img {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* ===== STEPS ===== */
+
+.steps {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+/* Individual Step */
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease;
+}
+
+/* ===== STAGGERED EFFECT ===== */
+.how.show .step:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.how.show .step:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.how.show .step:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+/* Step Number Circle */
+.step-number {
+  min-width: 45px;
+  height: 45px;
+  background: #16a34a;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 8px 18px rgba(22, 163, 74, 0.4);
+}
+
+/* Step Text */
+.step p {
+  font-size: 1.5rem;
+  color: #374151;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .how-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .steps {
+    text-align: center;
+    align-items: center;
+  }
+
+  .step {
+    justify-content: center;
+  }
+}
+
+
